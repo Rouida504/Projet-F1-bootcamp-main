@@ -11,6 +11,12 @@ donnees/resultats.csv        l'export brut du championnat
 # dans la partie l'écriture : avec ecrire_courses_propres, je crée le nouveau CSV propre pour Java avec le bon en-tête, les temps arrondis à 3 décimales et les cases vides pour les abandons
 
 02-java/src/                 maillon 2 — Classement.java à compléter
+# dans pointsPourPosition : j'ai implémenté le barème officiel des 10 premiers (25, 18, 15... points). Renvoie 0 si hors top 10
+# dans classementPilotes  : agrégation des points, victoires et 2es places par pilote via une Map. Tri avec gestion des égalités
+# dans classementEcuries  : cumul des statistiques des pilotes par écurie avec le même système de tri
+# dans positionMoyenne    : calcul de la moyenne des positions en ignorant les abandons (position <= 0), arrondie à 1 décimale
+
+
 03-js/                       maillon 3 — app.js à compléter, index.html à ouvrir
 secours/                     résultats de référence, en cas de blocage
 extensions/E1 à E4           les extensions et leurs tests
